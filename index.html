@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MyMelodyTune es una plataforma para artistas emergentes que registran melodías, ideas y canciones propias."
+    />
+    <title>MyMelodyTune | Registro de melodías</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-wrap" aria-label="Logo MyMelodyTune">
+          <div class="logo">M</div>
+          <div>
+            <p class="brand-name">MyMelodyTune</p>
+            <p class="brand-tag">Artistas emergentes</p>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#registro">Registrar</a>
+          <a href="#catalogo">Catálogo</a>
+          <a href="#equipo">Estudio</a>
+        </nav>
+
+        <a class="button button-primary" href="#registro">Subir demo</a>
+      </header>
+
+      <main id="inicio">
+        <section class="hero" aria-label="Presentación principal">
+          <div class="hero-copy">
+            <span class="eyebrow">Tu próximo hit empieza aquí</span>
+            <h1>Registra tus melodías y comparte tu sonido con el mundo.</h1>
+            <p>
+              MyMelodyTune ayuda a artistas emergentes a capturar ideas, organizar
+              demos y convertir cada inspiración en una canción lista para ser
+              escuchada.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#registro">Registrar melodía</a>
+              <a class="button button-secondary" href="#catalogo">Ver catálogo</a>
+            </div>
+
+            <ul class="hero-metrics" aria-label="Estadísticas de la plataforma">
+              <li>
+                <strong>1.2K</strong>
+                <span>melodías guardadas</span>
+              </li>
+              <li>
+                <strong>340</strong>
+                <span>artistas activos</span>
+              </li>
+              <li>
+                <strong>24h</strong>
+                <span>promedio de feedback</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Vista previa de la canción">
+            <div class="music-panel">
+              <div class="panel-header">
+                <span class="status-dot"></span>
+                <span>Session live</span>
+              </div>
+
+              <div class="track-art">
+                <span>Night</span>
+                <span>Drive</span>
+              </div>
+
+              <div class="wave-bars" aria-hidden="true">
+                <span style="--h: 16%"></span>
+                <span style="--h: 52%"></span>
+                <span style="--h: 84%"></span>
+                <span style="--h: 34%"></span>
+                <span style="--h: 76%"></span>
+                <span style="--h: 44%"></span>
+                <span style="--h: 90%"></span>
+                <span style="--h: 28%"></span>
+                <span style="--h: 62%"></span>
+                <span style="--h: 74%"></span>
+              </div>
+
+              <div class="track-meta">
+                <div>
+                  <p class="small-label">Canción</p>
+                  <h3>Midnight Echo</h3>
+                </div>
+                <span>3:42</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard" id="registro" aria-label="Registro de melodías">
+          <article class="studio-panel">
+            <div class="section-title">
+              <p class="section-kicker">Nuevo registro</p>
+              <h2>Guardar una melodía</h2>
+            </div>
+
+            <form id="melody-form" class="melody-form">
+              <div class="field-row">
+                <label>
+                  Nombre de la canción
+                  <input type="text" id="songName" placeholder="Ej. Luna en remezcla" required />
+                </label>
+
+                <label>
+                  Género
+                  <input type="text" id="genre" placeholder="Indie pop" required />
+                </label>
+              </div>
+
+              <div class="field-row">
+                <label>
+                  BPM
+                  <input type="number" id="bpm" min="60" max="220" value="110" required />
+                </label>
+
+                <label>
+                  Duración
+                  <input type="text" id="duration" placeholder="3:48" required />
+                </label>
+              </div>
+
+              <label>
+                Idea principal / melodía
+                <textarea
+                  id="notes"
+                  rows="4"
+                  placeholder="Describe la sensación, el motivo o la letra base de tu canción..."
+                  required
+                ></textarea>
+              </label>
+
+              <button type="submit" class="button button-primary">
+                Guardar melodía
+              </button>
+            </form>
+          </article>
+
+          <aside class="side-panel" id="equipo" aria-label="Panel lateral">
+            <div class="mini-card">
+              <p class="section-kicker">Tu estudio</p>
+              <h3>Progreso de la sesión</h3>
+
+              <div class="progress-bar" aria-label="Progreso de la sesión">
+                <span style="width: 72%"></span>
+              </div>
+
+              <ul class="stack-list">
+                <li>
+                  <span>Grabación vocal</span>
+                  <strong>100%</strong>
+                </li>
+                <li>
+                  <span>Producción</span>
+                  <strong>72%</strong>
+                </li>
+                <li>
+                  <span>Mezcla final</span>
+                  <strong>48%</strong>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mini-card list-card">
+              <p class="section-kicker">Playlist semanal</p>
+              <ol class="playlist">
+                <li>
+                  <span>Moonlight Echo</span>
+                  <span>3:42</span>
+                </li>
+                <li>
+                  <span>Electric Bloom</span>
+                  <span>4:10</span>
+                </li>
+                <li>
+                  <span>Velvet Heart</span>
+                  <span>2:54</span>
+                </li>
+              </ol>
+            </div>
+          </aside>
+        </section>
+
+        <section class="saved-melodies" aria-label="Melodías recientes">
+          <div class="section-header">
+            <p class="section-kicker">Mis ideas</p>
+            <h2>Melodías guardadas</h2>
+          </div>
+
+          <ul id="melody-list" class="melody-list" aria-live="polite"></ul>
+        </section>
+
+        <section class="catalog" id="catalogo" aria-label="Catálogo de canciones">
+          <div class="section-header">
+            <p class="section-kicker">Catálogo</p>
+            <h2>Últimos lanzamientos</h2>
+          </div>
+
+          <div class="song-grid">
+            <article class="song-card">
+              <div class="cover cover-one">V</div>
+              <div class="song-card-body">
+                <div class="song-meta">
+                  <span>Indie pop</span>
+                  <span>128 BPM</span>
+                </div>
+                <h3>Velvet Circuit</h3>
+                <p>
+                  Una mezcla de sintetizadores suaves y voces íntimas para una
+                  noche de sensaciones intensas.
+                </p>
+                <div class="song-footer">
+                  <span>Laura V.</span>
+                  <button type="button">Escuchar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="song-card">
+              <div class="cover cover-two">E</div>
+              <div class="song-card-body">
+                <div class="song-meta">
+                  <span>Electro</span>
+                  <span>136 BPM</span>
+                </div>
+                <h3>Electric Bloom</h3>
+                <p>
+                  Un tema lleno de energía, bajos profundos y una melodía que
+                  se queda pegada desde el primer coro.
+                </p>
+                <div class="song-footer">
+                  <span>Esteban R.</span>
+                  <button type="button">Escuchar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="song-card">
+              <div class="cover cover-three">M</div>
+              <div class="song-card-body">
+                <div class="song-meta">
+                  <span>Ambient</span>
+                  <span>96 BPM</span>
+                </div>
+                <h3>Midnight Drift</h3>
+                <p>
+                  Texturas atmosféricas y una estructura minimalista ideal para
+                  materializar emociones profundas.
+                </p>
+                <div class="song-footer">
+                  <span>Mila T.</span>
+                  <button type="button">Escuchar</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="brand-wrap footer-brand">
+          <div class="logo">M</div>
+          <div>
+            <p class="brand-name">MyMelodyTune</p>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegación footer">
+          <a href="#inicio">Inicio</a>
+          <a href="#registro">Registro</a>
+          <a href="#catalogo">Catálogo</a>
+        </nav>
+
+        <p>© 2026 MyMelodyTune</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
