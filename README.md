@@ -1,4 +1,4 @@
-# MelodyMia
+# MyMelodyTune
 
 Proyecto de una página web responsiva para artistas emergentes que desean registrar melodías y canciones propias.
 
@@ -34,7 +34,7 @@ Este proyecto es un sitio estático y puede desplegarse en servicios como Netlif
 ```bash
 git init
 git add .
-git commit -m "Primer lanzamiento MelodyMia"
+git commit -m "Primer lanzamiento MyMelodyTune"
 ```
 
 Luego conecta tu repositorio remoto:
